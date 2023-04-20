@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt("Nhập ngày")
+    let b = prompt("Nhập tháng")
+    let c = prompt("Nhập năm")
+    class MyDate {
+        day;
+        month;
+        years;
+
+        constructor(day, month, years) {
+            this.day = day;
+            this.month = month;
+            this.years = years;
+        }
+
+        display = function () {
+            document.write("Ngày " + this.day + " tháng " + this.month + " năm " + this.years)
+        }
+    }
+
+    let date = new MyDate(a, b, c);
+    date.display();
+
+
+    // function MyDate(day, month, years) {
+    //     this.day = day;
+    //     this.month = month;
+    //     this.years = years;
+    //
+    //     this.display = function (){
+    //         document.write("Ngày " + this.day + " tháng " + this.month + " năm " + this.years)
+    //     }
+    //
+    // }
+    // let temp = new MyDate(3,2,4);
+    // temp.display()
+
+</script>
